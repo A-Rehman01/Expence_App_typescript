@@ -1,1 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
 
+*,html{
+    margin: 0;
+    padding: 0;
+}
+
+.MainContainer{
+text-align: center;
+/* border: 2px  solid red; */
+background-color: #F2F4F4;
+}
+
+.mainblance  .mainbalanceheaing{
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px;
+    
+}
+
+.mainblance .mainbalancevalue{
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+.incomeexpenxe{
+    font-family: 'Bitter', serif;
+    text-transform: uppercase;
+    font-size: 19px;
+    background-color: white;
+    margin-top: 20px;
+    padding: 5px;
+    box-shadow: 5px 6px 5px hsl(180, 8%, 92%);
+    /* border: 2px  solid black; */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.expence{
+    margin-top: 10px;
+}
+.expenxevalue{
+    font-size: 21px;
+    color: red;
+    font-weight: bold;
+}
+.incomevalue{
+    font-size: 21px;
+    font-weight: bold;
+    color: green;
+}
+
+.newTrasection{
+    margin-top: 20px;   
+    font-family: 'Bitter', serif;
+}
+.newtrasextionheading,.trasextionheading{
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.NewTrasectionform{
+    margin: 10px;
+}
+.inputfields{
+    border: none;
+    padding: 7px;
+    margin: 5px;
+    font-size: 16px;
+    border-bottom: 1px solid black;   
+}
+.NewTrasectionsbtn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.incomebtn{
+    border: none;
+    font-family: 'Bitter', serif;
+    padding: 7px;
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    margin: 5px;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 40%;
+
+}
+.expenxebtn{
+
+    border: none;
+    font-family: 'Bitter', serif;
+    padding: 7px;
+    font-weight: bolder;
+    background-color: red;
+    color: white;
+    margin: 5px;
+    font-size: 17px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.trasection{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: 'Bitter', serif;
+    font-weight: bold;
+    box-shadow: 5px 6px 5px hsl(180, 8%, 92%);
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px
+}
+.deleted{
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.trasection:hover  .deleted{
+    display: inline;
+}
