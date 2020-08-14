@@ -3,15 +3,22 @@ import React, { useContext } from 'react'
 //Components
 import { Contextdata } from './../GlobalContext/Contextdata'
 
-type trasectiommap = {
-    text:string;
-    amount:number
-}
-
+//types
+import {trasectiommap} from './../Types/Types'
 export const Trasections = () => {
 
-    const {state}= useContext(Contextdata)
-    console.log('Trasections', state)
+    const { state } = useContext(Contextdata)
+    const { dispatch } = useContext(Contextdata);
+
+
+    function DeleteTrasection(event: number) {
+
+        dispatch({
+            type: 'DEL',
+            payload:event,
+        });
+
+    }
 
     return (
         <div>
@@ -19,12 +26,12 @@ export const Trasections = () => {
             <hr />
             <ul>
                 {
-                    state.map((traObj:trasectiommap,ind:number) => {
+                    state.map((traObj: trasectiommap, ind: number) => {
                         return (
                             <li key={ind} className='trasection'>
                                 <div className='trasectiondel'>
-                                    <div className='deleted'>X</div>
-                                    {traObj.text}
+                                    <button onClick={() => (DeleteTrasection(traObj.id))} className='deleted'>X</button>
+                                    <span>{traObj.text}</span>
                                 </div>
                                 <div>{traObj.amount} PKR</div>
                             </li>)

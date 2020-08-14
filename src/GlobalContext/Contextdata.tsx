@@ -1,15 +1,14 @@
 import React, { useReducer } from 'react'
 import { Reducer } from './Reducer'
 
-type ContextProps = {
-    children: React.ReactNode
-};
+//types
+import {ContextProps} from './../Types/Types'
 
 const trasections: object[] = [
 ]
 
 
-export const Contextdata = React.createContext<object [] | any>(trasections)
+export const Contextdata = React.createContext<object[]|any>(trasections)
 
 const ContextProvider = ({ children }: ContextProps) => {
 
