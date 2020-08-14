@@ -21,7 +21,7 @@ export const Newtrasection = () => {
             alert('Enter Amount')
             return
         }
-        const newTra:object=expence==0?
+        const newTra:object=expence===0?
         {
             id: (Math.random() * 1000000000).toFixed(0),
             text,
