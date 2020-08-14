@@ -1,5 +1,6 @@
 import React, { useContext,useState } from 'react'
 import {Contextdata} from './../GlobalContext/Contextdata'
+import ListIcon from '@material-ui/icons/List';
 
 export const Newtrasection = () => {
     var expence:number=0;    
@@ -42,7 +43,7 @@ export const Newtrasection = () => {
     }
     return (
         <div className='newTrasection'>
-            <div  className='newtrasextionheading'>Add new transaction</div>
+            <div  className='newtrasextionheading'><ListIcon/> Add new transaction</div>
             <hr/>
             <form action="" className='NewTrasectionform' onSubmit={Submit}>
                 <input className='inputfields' value={text} onChange={updateText} type="text" required placeholder='Enter Text...'/>

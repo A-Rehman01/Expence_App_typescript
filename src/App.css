@@ -62,9 +62,9 @@ background-color: #F2F4F4;
 .newtrasextionheading,.trasextionheading{
     text-align: left;
     margin-left: 10px;
-    margin-bottom: 10px;
     margin-top: 20px;
 }
+
 .NewTrasectionform{
     margin: 10px;
 }
@@ -73,7 +73,8 @@ background-color: #F2F4F4;
     padding: 7px;
     margin: 5px;
     font-size: 16px;
-    border-bottom: 1px solid black;   
+    border-bottom: 1px solid black; 
+    margin-top: 20px;  
 }
 .NewTrasectionsbtn{
     display: flex;
@@ -123,6 +124,13 @@ background-color: #F2F4F4;
     display: none;
     margin-left: 5px;
     margin-right: 5px;
+    border: none;
+   
+}
+.delicon{
+    color: red;
+    background-color: white;
+    border: none;
 }
 .trasection:hover  .deleted{
     display: inline;
