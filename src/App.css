@@ -141,3 +141,12 @@ background-color: #F2F4F4;
 .trasection:hover  .deleted{
     display: inline;
 }
+.Notificationbtn{
+    text-align: center;
+    border: none;
+    background-color: lightblue;
+    padding: 5px;
+    color: blue;
+    font-weight: bold;
+    height: 40px;
+}

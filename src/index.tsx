@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import swDevOffline from './Components/SwDevOffline';
-
-// import * as serviceWorker from './serviceWorker';
-
+import swDevOffline from './Components/Servises/SwDevOffline';
 
 
 ReactDOM.render(
