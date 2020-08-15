@@ -1,8 +1,20 @@
-import React, { useContext,useState } from 'react'
+import React, { useContext,useState,useRef,useEffect} from 'react'
 import {Contextdata} from './../GlobalContext/Contextdata'
 import ListIcon from '@material-ui/icons/List';
 
+
 export const Newtrasection = () => {
+
+    const  element=useRef<HTMLInputElement>(null);
+    useEffect(()=>{
+        async function focus(){
+            if (null !== element.current) {
+            element.current.focus();
+            }
+        }
+        focus();
+    },[])
+
     var expence:number=0;    
     const [text, setText] = useState<string>('')
     const [amount, setAmount] = useState <string>('')
@@ -46,7 +58,7 @@ export const Newtrasection = () => {
             <div  className='newtrasextionheading'><ListIcon/> Add new transaction</div>
             <hr/>
             <form action="" className='NewTrasectionform' onSubmit={Submit}>
-                <input className='inputfields' value={text} onChange={updateText} type="text" required placeholder='Enter Text...'/>
+                <input className='inputfields'  ref={element} value={text} onChange={updateText} type="text" required placeholder='Enter Text...'/>
                 <input className='inputfields' value={amount} onChange={updateAmount} type="number" required placeholder='Enter Amount...'/>
                 <div className='NewTrasectionsbtn'>
                     <button className='incomebtn'  onClick={() => (expence = 0)}>Income</button>

@@ -120,18 +120,24 @@ background-color: #F2F4F4;
     margin-left: 25px;
     margin-right: 25px
 }
+.date{
+    font-size: 10px;
+    color: gray;
+    font-family: 'Bitter', serif;
+    margin-bottom: 0px !important;
+}
 .deleted{
     display: none;
     margin-left: 5px;
     margin-right: 5px;
     border: none;
-   
-}
-.delicon{
+    padding: 5px;
+    font-weight: bolder !important;
     color: red;
     background-color: white;
-    border: none;
+    font-size: 18px !important;
 }
+
 .trasection:hover  .deleted{
     display: inline;
 }
