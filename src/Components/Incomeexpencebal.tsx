@@ -25,7 +25,7 @@ export const Incomeexpencebal = () => {
                 <div className='incomevalue'><CountUp separator=',' end={incomebal}/> PKR</div>
             </div>
             <div className='expence'>
-                <div>Expenxe</div>
+                <div>Expense</div>
                 <div className='expenxevalue'><CountUp separator=',' end={expencebal}/> PKR</div>
             </div>
         </div>

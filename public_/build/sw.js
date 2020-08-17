@@ -12,6 +12,7 @@ this.addEventListener("install", (event) => {
                 '/static/js/main.chunk.js',
                 '/manifest.json',
                 'index.html',
+                '/favicon.ico',
                 '/coins.png',
                 'https://fonts.gstatic.com/s/bitter/v16/raxhHiqOu8IVPmnRc6SY1KXhnF_Y8fbfOLjOXQ.woff2',
                 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
